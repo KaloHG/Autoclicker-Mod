@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "autoclickermod",
+  "version": "${version}",
+  "name": "Autoclicker-Mod",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Gabe Newell/Autoclicker-Mod"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/Autoclicker-Mod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "gov.kallos.autoclickermod.client.Autoclicker_ModClient"
+    ],
+    "main": [
+      "gov.kallos.autoclickermod.Autoclicker_Mod"
+    ]
+  },
+  "mixins": [
+    "Autoclicker-Mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
